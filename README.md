@@ -1,6 +1,6 @@
 NLP_classification_project
 ==========================
-By Morgan Wallace, Sonali Sharma, Derek Kuo, Vanessa Macafe
+By Morgan Wallace, Sonali Sharma, Derek Kuo, Vanessa McAfee
 
 For: Natural Language Processing - Fall 2013
 =========================
