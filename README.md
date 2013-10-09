@@ -16,3 +16,5 @@ directory above this file (at same level as this directory).
 
 The ".p" files each contain a dictionary with the sentence as key, and the 
 value being another dictionary with attributes as key and sentiment score as the value.
+
+**For some reason my git email was Jim Blomo's - that's why the commits were coming from him. I changed it to mine. So do not be confused if you see that in the commit logs.
