@@ -35,7 +35,7 @@ def parse_reviews(directory, filename):
                     sent=line[2:]
                     tag = "neutral"
 
-                parsed_sents.append((sent.split(),tag))
+                parsed_sents.append((sent,tag))
         
         pickledName=filename[:filename.rfind(".")]+".p"
         pickle.dump(parsed_sents,open(pickledName,"wb"))
