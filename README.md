@@ -10,4 +10,5 @@ Plan:
 2. Sentence Level Sentiment features by Monday (10-14)
 3. Refine
 
-parser.py parses the text files
+parser.py parses the text files and outputs them into pickled files (*.p)
+
