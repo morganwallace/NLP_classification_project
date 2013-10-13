@@ -2,11 +2,11 @@
 # <nbformat>3.0</nbformat>
 
 # <codecell>
-
+from __future__ import division
 import os
 import nltk
 import pickle
-from __future__ import division
+
 from nltk.corpus import stopwords
 import re
 import random
@@ -34,6 +34,7 @@ print parsed_reviews.items()[:5]
 # <codecell>
 
 #puts the tags with the words
+tagged_words=[]
 for sent in parsed_reviews.keys():
     tag=parsed_reviews[sent]
     tagged_words += [(word.lower(),tag) for word in nltk.word_tokenize(sent)]
@@ -55,7 +56,7 @@ def has_features(sent):
     num_adj = len([tag for (word,tag) in tags if tag =="JJ"])
     sent_words=set(sent.split())
     wps = len(sent_words)
-    
+    features={}
     for word in word_features:
         features['contains(%s)' % word] = (word in sent_words)
     #adding # of adjectives
